@@ -1,16 +1,24 @@
 .header__link {
   color: var(--accent);
-  margin-right: 93px;
+  // margin-right: 93px;
 
   font-family: raleway;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  // font-size: 26px;
+  // line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
 }
-
 .header-link__logo_color_accent {
   color: var(--primary-text-color);
 }
+@media screen and (min-width: 1200px) {
+  .header__link {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .accent-footer {
   color: var(--font-color);
 }
