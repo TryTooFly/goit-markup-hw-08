@@ -1,0 +1,26 @@
+.header__link {
+  color: var(--accent);
+  margin-right: 93px;
+
+  font-family: raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.header-link__logo_color_accent {
+  color: var(--primary-text-color);
+}
+.accent-footer {
+  color: var(--font-color);
+}
+.logo-footer {
+  color: var(--accent);
+  margin-bottom: 25px;
+  display: block;
+  margin-right: 0;
+  font-family: raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
