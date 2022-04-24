@@ -779,13 +779,33 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.hero-title__mobile {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.modal-mobile {
+  min-height: 609px;
+  min-width: 450px;
+}
+
+.contact-form-checkbox-label__mobile {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .list-text {
