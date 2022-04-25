@@ -8,8 +8,6 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   border: 1px solid #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-logos {
   display: flex;
@@ -48,6 +46,13 @@
 @media screen and (min-width: 1200px) {
   .logo-client {
     width: 170px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: var(--accent);
+      border: 1px solid #2196f3;
+    }
   }
   .list-logos {
     flex-wrap: nowrap;
