@@ -57,8 +57,15 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -800,6 +807,7 @@ img {
 .modal-mobile {
   min-height: 609px;
   min-width: 450px;
+  overflow: auto;
 }
 
 .contact-form-checkbox-label__mobile {
@@ -861,20 +869,15 @@ img {
 }
 
 .list-text {
-  display: flex;
-  flex-wrap: nowrap;
+  display: block;
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.list-text li:not(:last-child) {
-  margin-right: 30px;
-}
-
 .list-text-item {
   height: auto;
-  width: 270px;
+  width: 450px;
   margin-bottom: 30px;
 }
 
@@ -886,6 +889,31 @@ img {
   justify-content: center;
   display: flex;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-text-item {
+    width: 354px;
+  }
+  .list-text-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .list-text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-text {
+    flex-wrap: nowrap;
+  }
+  .list-text li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .list-text-item {
+    width: 270px;
+  }
 }
 
 .work {

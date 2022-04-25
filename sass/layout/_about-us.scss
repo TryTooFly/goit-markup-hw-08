@@ -1,17 +1,13 @@
 .list-text {
-  display: flex;
-  flex-wrap: nowrap;
+  display: block;
   list-style: none;
   padding-left: 0;
   margin: 0;
-  & li:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 .list-text-item {
   height: auto;
-  width: 270px;
+  width: 450px;
 
   margin-bottom: 30px;
 }
@@ -24,3 +20,43 @@
   display: flex;
   border-radius: 4px;
 }
+@media screen and (min-width: 768px) {
+  .list-text-item {
+    width: 354px;
+  }
+  .list-text-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .list-text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-text {
+    flex-wrap: nowrap;
+    & li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .list-text-item {
+    width: 270px;
+  }
+}
+// .list-text {
+//   display: flex;
+//   flex-wrap: nowrap;
+//   list-style: none;
+//   padding-left: 0;
+//   margin: 0;
+//   & li:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
+// .list-text-item {
+//   height: auto;
+//   width: 270px;
+
+//   margin-bottom: 30px;
+// }
