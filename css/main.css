@@ -1059,6 +1059,21 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .logo-client {
+    width: 170px;
+  }
+  .list-logos {
+    flex-wrap: nowrap;
+  }
+  .svg-logo-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .svg-logo-list:nth-child(-n + 4) {
+    margin-bottom: 0;
+  }
+}
+
 .list-footer {
   list-style: none;
   margin-top: 0;
