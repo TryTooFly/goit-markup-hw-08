@@ -46,7 +46,7 @@
   }
 }
 .icons-nav-footer {
-  margin-left: 70px;
+  margin-left: 0;
 }
 
 .list-icons-footer {
@@ -57,5 +57,11 @@
   margin-bottom: 0;
   & li:not(:last-child) {
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icons-nav-footer {
+    margin-left: 70px;
   }
 }
