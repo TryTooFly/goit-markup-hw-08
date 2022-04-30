@@ -286,11 +286,25 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list">
             <li class="list-item">
+              <picture>
+                <source
+                srcset="./images/igordemjanenko-desctop.jpg 1x, ./images/igordemjanenko-desctop@2x.jpg 2x"
+                media="(min-width:1200px)"
+                />
+                    <source
+                srcset="./images/igordemjanenko-tablet.jpg 1x, ./images/igordemjanenko-tablet@2x.jpg 2x"
+                media="(min-width:768px)"
+                />
+                    <source
+                srcset="./images/igordemjanenko-mobile.jpg 1x, ./images/igordemjanenko-mobile@2x.jpg 2x"
+                media="(max-width:767px)"
+                />
               <img
-                src="./images/igordemjanenko.jpg"
+                src="./images/igordemjanenko-mobile.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
+                class="section-our-team__picture"
               />
+              </picture>
 
               <h3 class="list-team_name">Игорь Демьяненко</h3>
               <p>Product Designer</p>
