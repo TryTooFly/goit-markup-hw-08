@@ -170,6 +170,12 @@
   .contacts-list-item__link {
     display: flex;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent);
+      cursor: pointer;
+    }
   }
   .contacts-list__item:not(:last-child) {
     margin-bottom: 10px;
@@ -198,6 +204,11 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent);
+    }
   }
 }
 @media screen and (min-width: 1200px) {
