@@ -610,12 +610,14 @@ img {
   letter-spacing: 0.02em;
 }
 
-.mobile-menu__current-page {
-  color: #2196f3;
-}
-
 .mobile-menu-list-item__link {
   color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-list-item__link:hover,
+.mobile-menu-list-item__link:focus {
+  color: #2196f3;
 }
 
 .mobile-menu__contacts {
