@@ -5,14 +5,15 @@
   text-align: center;
   list-style: none;
   margin-top: 0;
-  margin-bottom: 60px;
-
+  margin-bottom: 0;
   padding-left: 0;
   & li:not(:last-child) {
     margin-bottom: 8px;
   }
 }
-
+.tablet-footer {
+  margin-bottom: 60px;
+}
 footer {
   background-color: var(--secondary-font-color);
   padding-top: 60px;
@@ -67,10 +68,10 @@ address {
   margin-bottom: 20px;
   margin-left: 0;
   text-align: center;
-  margin-top: 60px;
 }
 .form-footer {
   display: block;
+  margin-top: 60px;
 }
 .footer-form-massage {
   color: var(--font-color);
@@ -140,9 +141,12 @@ address {
   .nav-footer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: 768px;
   }
+
   .tablet-footer {
-    margin-right: 165px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -159,7 +163,6 @@ address {
   }
   .footer-form-field {
     display: flex;
-    margin-left: 93px;
   }
   .footer-position {
     display: flex;
@@ -180,13 +183,16 @@ address {
     margin-top: 0;
     margin-bottom: 0;
     text-align: left;
-    margin-left: 93px;
   }
   .text-footer {
     text-align: left;
   }
   .footer-form-btn {
     margin-left: 12px;
+  }
+  .form-footer {
+    margin-left: 93px;
+    margin-top: 0;
   }
 }
 // .footer-form-field {
